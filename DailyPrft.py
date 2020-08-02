@@ -13,7 +13,7 @@ def init():
     Gets and updates data of tracked assets, which are kept in assets.csv
     As of now, assets in assets.csv have to be initialized or removed by hand
     """
-    t = pd.read_csv("assets.csv", index_col="index")
+    t = pd.read_csv("assets.csv")
     if not os.path.isfile('./HIS.csv'):
         yf.download(t["Assets"].tolist()).swaplevel(1, 0, 1).to_csv("HIS.csv")
     s = pd.read_csv("HIS.csv", header=[0, 1], index_col=0)
