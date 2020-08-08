@@ -34,7 +34,7 @@ if not os.path.isfile('./HIS_USE.csv'):
 S = pd.read_csv("HIS_USE.csv", header=[0, 1], index_col=0)
 
 
-def calc(days, cash, gen_csv):
+def three_day_hi_low(days, cash, gen_csv):
     """
     Runs through the days and assets, calculating the daily net worth, using the hardcoded
     trading strategy, and finally return the final standings, including the percentage profit
@@ -86,6 +86,12 @@ def calc(days, cash, gen_csv):
 
 
 if __name__ == '__main__':
-    i = input("").split(" ")
-    print(calc(int(i[0]), float(i[1]), bool(i[2])))
-    input("")
+    i = input("days/cash/gen_csv").split(" ")
+    print(
+        three_day_hi_low(
+            int(i[0]),
+            float(i[1]),
+            bool(i[2])
+        )
+    )
+    input("Enter to exit")
