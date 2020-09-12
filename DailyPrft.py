@@ -20,6 +20,13 @@ plt.style.use("bmh")
 #  4) Make fetch more efficient by using operations on whole dataFrames instead of looping through their elements
 
 
+
+if not os.path.exists("Assets"):
+    os.makedirs("Assets")
+
+if not os.path.exists("Profit%"):
+    os.makedirs("Profit%")
+
 if os.path.isfile(
         "Assets\\HIS.csv"):
 
