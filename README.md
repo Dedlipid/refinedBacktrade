@@ -17,9 +17,11 @@ and weather you want the daily data saved to a csv(bool), seperated by a comma, 
 Getting famaliar with manuplating multi-index data, re-adjusting indicies, and considering where to store related data in DataFrames.
 
 # Next Steps For Improvement
-- Track more assets
-- Add the shorting strategy(only needs adjustment to two signals, I simply don't have the knowledge of how it works in practice) 
-- Track more micro data for each ETF(alot more doable from the simple version, now it's a matter of creativity)
+- Add the shorting strategy(dependant on the rates one's broker gives) 
+- Allocate cash based on available assets to buy that day
+- Have a history of prices so it's possible to measure success(per trade made, ie profit per trade)
+- Generalize the calc method to deal with certain bool dataFrames returned by the fetch method
+-Make fetch more efficient by using operations on whole dataFrames instead of looping through their elements
 
 # Author
 - **Bamdad Shamaei** [Github](https://github.com/Dedlipid/)
