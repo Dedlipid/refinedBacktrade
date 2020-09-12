@@ -5,7 +5,7 @@ from numpy import nan
 import ReturnRSI
 import matplotlib.pyplot as plt
 
-T = pd.read_csv(filepath_or_buffer="Assets\\assets.csv")
+T = pd.read_csv(filepath_or_buffer="assets.csv")
 T["Quantity"] = 0
 T["last_buy"] = T["last_price"] = nan  # Index: Asst_name,Asst_quantity,Last_buy
 
