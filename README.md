@@ -2,7 +2,7 @@
 
 The data gathering has been sped up substancially(from minutes to seconds). The data is processed on a day by day basis instead of a fund 
 by fund basis, allowing visualizations of things like the total cash, asset value, and profits. The asset csv has also been made
-easier to edit, and all the code has been wrapped up into one python file. Same parameters as before are variable.
+easier to edit. Same parameters as before are variable.
 
 # Getting Started
 - Download DailyPrft.py and assets.csv into the same folder, and just indicate to the daily profit file the timespan(int), starting cash(float),
